@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="../../Content/css/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="../../Content/css/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="../../Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../Content/css/estilo.css" rel="stylesheet" />
+
+    <script src="../../Scripts/jquery-3.0.0.min.js"></script>
+
+    <script src="../../Scripts/bootstrap.min.js"></script>
+
+    <script src="../../Scripts/jquery.validate.min.js"></script>
+
+    <script src="../../Scripts/additional-methods.min.js"></script>
+
+    <script src="../../Scripts/localization/messages_pt_BR.min.js"></script>
+
+    <script src="../../Scripts/notify.min.js"></script>
+
+    <script src="../../Scripts/jquery.mask.min.js"></script>
+
+    <title>Rosalves Serralheria | Cadastro</title>
+
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+            $("#form1").validate({
+                rules: {
+                    txtNome: {
+                        required: true,
+                        maxlength: 100
+ 
+                    },
+                     txtSobrenome: {
+                        required: true,
+                        maxlength: 100
+ 
+                    },
+                    txtEmail: {
+                        required: true,
+                        email: true
+                    },
+
+                    txtCelular: {
+                        required: true,
+                        maxlength: 20,
+                        minlength: 16
+
+                    },
+                    txtCpf: {
+                        required: true,
+                        maxlength: 14,
+                        minlength: 14
+
+                    },
+                    txtCnpj: {
+                        
+                        maxlength: 18,
+                        minlength: 18
+
+                    },
+                    txtTelefoneComercial: {
+                       
+                        maxlength: 18,
+                        minlength: 14
+
+                    },
+
+                    txtSenha: {
+                        required: true,
+                        maxlength: 200,
+                        minlength: 8
+
+                    }
+
+                },
+               
+            })
+        })
+        $(document).ready(function () {
+            $("#txtCelular").mask("(00) 0.0000-0000")
+            $("#txtTelefoneComercial").mask("(00) 0000-0000")
+            $("#txtCpf").mask("000.000.000/00")
+            $("#txtCnpj").mask("00.000.000/0000-00")
+
+
+        })
+
+
+
+
+    </script>
+
+
+</head>
+<body>
+
+    <!--Formulario para cadastro dentro do card-->
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-sm-12 col-md-7 col-lg-5 mx-auto">
+
+                <div class="card card-signin my-5">
+
+                    <div class="card-body">
+
+                        <!--Titulo-->
+                        <h5 class="card-title text-center  py-2">Criar uma conta Rosalves </h5>
+
+                        <!--Link Para Login-->
+                        <p>Já possui uma conta? <a href="../Login.html" class="text-center">Faça login agora!</a></p>
+
+
+
+                        <form id="form1" runat="server">
+
+                            <!--Mensagem-->
+                            <asp:Label ID="lblMensagem" runat="server" Text=""></asp:Label>
+
+
+                            <!--Formulario Nome-->
+                            <div class="form-group ">
+
+                                <label>Nome</label>
+                            
+                                <input type="text" name="txtNome" id="txtNome" placeholder="Nome" class="form-control"/>
+
+                                
+                            </div>
+                            <div class="form-group ">
+
+                                <label>Sobrenome</label>
+                            
+                                <input type="text" name="txtSobrenome" id="txtSobrenome" placeholder="Sobrenome" class="form-control"/>
+
+                            </div>
+
+
+                            <div class="form-group ">
+
+                                <label>CPF</label>
+                            
+                                <input type="text" name="txtCpf" id="txtCpf" placeholder="000.000.000/00" class="form-control"/>
+
+
+                            </div>
+
+
+                            <div class="form-group ">
+
+                                <label>CNPJ</label>
+                            
+                                <input type="text" name="txtCnpj" id="txtCnpj" placeholder="00.000.000/0000-00" class="form-control"/>
+
+                            </div>
+
+                            <div class="form-group ">
+                                <label>Celular</label>
+                            
+                                <input type="text" name="txtCelular" id="txtCelular" placeholder="(00) 0.0000-0000" class="form-control"/>
+
+                            </div>
+
+                            <div class="form-group ">
+
+                                <label>Telefone Comercial:</label>
+                            
+                                <input type="text" name="txtTelefoneComercial" id="txtTelefoneComercial" placeholder="(00)0000-0000" class="form-control"/>
+
+                            </div>
+
+
+                            <div class="form-group ">
+
+
+                                <label>Email:</label>
+                            
+                                <input type="email" name="txtEmail" id="txtEmail" placeholder="E-mail" class="form-control"/>
+
+                            </div>
+
+                            <div class="form-group ">
+                                
+                                    <label>Senha:</label>
+                            
+                                    <input type="password" name="txtSenha" id="txtSenha" placeholder="Senha" class="form-control"/>
+                                
+
+                               
+                            </div>
+
+                            <div class="text-center">
+                                <a href="../index.html" class="btn btn-secondary btn-lg" role="button" aria-pressed="true">Voltar</a>
+                                <a href="../login.html" class="btn btn-lg btn-dark text-white" Style="background-color: #000;" ID="btnCriarNovaConta" >Cadastrar-se</a>
+                        </div>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+

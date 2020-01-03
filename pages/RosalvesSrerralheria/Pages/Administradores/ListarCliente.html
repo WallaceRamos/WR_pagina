@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <link href="../../Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../Content/css/estilo.css" rel="stylesheet" />
+    <link href="../../Content/css/dashboard.css" rel="stylesheet" />
+
+    <script src="../../Scripts/jquery-3.0.0.min.js"></script>
+    <script src="../../Scripts/bootstrap.min.js"></script>
+
+
+    <title>Rosalves Serralheria | Home Adiministrador</title>
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+
+        <!--Menu superio -->
+        <nav class="navbar navbar-dark fixed-top  flex-md-nowrap p-0 shadow" style="background-color: #000;">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="">Rosalves Serralheria</a>
+
+            <div class="text-right ">
+                <a Class="btn btn-dark text-white" ID="lblTitulo" >Tela Principal do Administrador</a>
+            </div>
+
+        </nav>
+        <!--fim do Menu superio -->
+
+        <!-- layout em container -->
+        <div class="container-fluid">
+
+            <!--Menu lateral -->
+
+            <div class="row">
+
+                <nav class="navbar col-md-2 d-none d-md-block  sidebar" style="background-color: #000;">
+
+                    <div class="sidebar-sticky">
+
+                        <ul class="nav flex-column">
+
+                            <li class="nav-item">
+                                <a class="nav-link btn  text-white" href="../Administradores/indexAdministrador.html">Início </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link btn  text-white" href="../Administradores/ListarCliente.html">Clientes</a>
+                            </li>
+
+                            <li class="dropdown nav-item text-nowrap">
+                                <a class=" dropdown-toggle nav-link text-white btn btn-dark" style="background-color: #000;" href="#" data-toggle="dropdown">Solicitações</a>
+                                <div class="dropdown-menu dropdown-menu-md ">
+                                    <a class="dropdown-item nav-link" href="../Administradores/ListarConfirmada.html">Confirmada pelo cliente</a>
+                                    <a class="dropdown-item nav-link" href="../Administradores/ListarCancelada.html">Canceladas</a>
+                                </div>
+
+                            </li>
+
+                            <li class="dropdown nav-item text-nowrap">
+                                <a class=" dropdown-toggle nav-link text-white btn btn-dark" style="background-color: #000;" href="#" data-toggle="dropdown">Produções</a>
+                                <div class="dropdown-menu dropdown-menu-md ">
+                                    <a class="dropdown-item nav-link" href="../Administradores/ListarProducao.html">Em andamento</a>
+                                    <a class="dropdown-item nav-link" href="../Administradores/ListarFinalizada.html">Finalizadas</a>
+                                </div>
+                            </li>
+
+                             <li class="dropdown nav-item text-nowrap">
+                                <a class=" dropdown-toggle nav-link text-white btn btn-dark" style="background-color: #000;" href="#" data-toggle="dropdown">Relátorios</a>
+                                <div class="dropdown-menu dropdown-menu-md ">
+                                    <a class="dropdown-item nav-link" href="../Administradores/RelatorioVenda.html">Conversão em vendas</a>
+                                    <a class="dropdown-item nav-link" href="../Administradores/RelatorioProducao.html">Produtividade</a>
+                                </div>
+
+                            </li>
+                            
+                            <br />
+                            <br />
+                            <br />
+                            <li class="nav-item text-nowrap">
+                                <a href="../index.html" class="nav-link btn btn-light  text-dark" iD="lbFazerLogout" >Sair</a>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </nav>
+
+            </div>
+            <!--Fim do Menu lateral -->
+
+            <!--Conteudo -->
+            <div role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+                 <div class="text-center h5">
+                            <p ID="hlTitulo">Lista de clientes:</p> 
+                        </div>
+                      <br />
+                      <div class="table-responsive col-md-12">
+                        <table class="table table-hover ">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Nome</th>
+                                    <th scope="col">Sobrenome</th>
+                                    <th scope="col">CPF</th>
+                                    <th scope="col">Celular</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Button</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>joao</td>
+                                    <td>Mark</td>
+                                    <td>33333333</td>
+                                    <td>333333</td>
+                                    <td>Otto@wwww</td>
+                                    
+                                    <td><a href="../Administradores/DetalharCliente.html" Class="btn btn-dark text-white" Style="background-color: #000000;" ID="lbDetalhar">Detalhes</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td >Thornton</td>
+                                    <td>Jacob</td>
+                                    <td>3333333</td>
+                                    <td>33333</td>
+                                    <td>Otto@wwww</td>
+                                   
+                                    <td><a href="../Administradores/DetalharCliente.html" Class="btn btn-dark text-white" Style="background-color: #000000;" ID="lbDetalhar">Detalhes</a></td>
+                                  </tr>
+                                 
+                                </tbody>
+                              </table>
+            
+                        </div>
+            
+            
+                <br />
+             <div class="text-center h5">
+                            <asp:Label ID="lblContagem" runat="server" Text=""></asp:Label>
+                        </div>
+
+
+                        <div class="text-center h5">
+                            <asp:Label ID="lblMensagem" runat="server" Text=""></asp:Label>
+                        </div>
+
+                </div>
+            <!--Fim do Conteudo -->
+
+        </div>
+        <!-- Fim do layout em container -->
+
+
+
+    </form>
+</body>
+</html>
+

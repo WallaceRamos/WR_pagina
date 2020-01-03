@@ -1,0 +1,235 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- CSS -->
+
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+        <!-- JavaScript -->
+        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        
+        <script src="js/jquery.mask.min.js" type="text/javascript"></script>
+        
+        <script src="js/jquery.validate.min.js" type="text/javascript"></script>
+        
+        <script src="js/additional-methods.min.js" type="text/javascript"></script>
+        
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        
+        <script src="js/bootstrap-notify.min.js" type="text/javascript"></script>
+        
+        <script src="js/localization/messages_pt_BR.min.js" type="text/javascript"></script>
+        
+        <script src="js/custom.js" type="text/javascript">
+
+
+            $(document).ready(function () {
+                $("#formCadastro").validate({
+                    rules: {
+                        nome:{
+                            required: true,
+                            maxlength: 40,
+                            minlength: 5
+
+                        },
+
+                        email:{
+                            required: true,
+                            email: true
+                        },
+                      
+                        mensagem:{
+                            required: true,
+                            maxlength: 200,
+                            minlength: 10,
+                            minWords: 3
+                        },
+                    },
+                         submitHandler: function (form) {               
+        
+                        $.notify("Pedido enviado com sucesso" , "success")     
+
+                        
+                    }         
+
+
+        } )
+
+
+
+        </script>
+
+    </head>
+    <body>
+    
+    <header>
+        <!--=================
+                  menu
+            ===================-->
+                
+
+                <nav class="navbar navbar-expand-lg navbar-dark  fixed-top"  id="menu">
+
+                    <div class="container">
+
+                        <a href="index.html" title=""><img id="logoImage" class="logoImage" src="images/alemao-pq.png" alt="" title="" /></a>
+
+                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
+                            <span class="navbar-toggler-icon"></span>
+
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarResponsive">
+                            
+
+                            <ul class="nav navbar-nav ml-auto">
+
+                                <li class="nav-item">
+
+                                    <a class="nav-link scroll" href="index.html">Inicio</a>
+
+                                </li>
+
+                                <li >
+
+                                    <a class="nav-link scroll" href="sobre.html">Sobre</a>
+
+                                </li>
+                                 <li class="nav-item dropdown">
+        
+                                      <a class="nav-link scroll" href="portifolio.html">Portifolio</a>
+        
+                                 
+      
+                                 </li>
+
+                                <li class="nav-item">
+
+                                    <a class="nav-link scroll" href="servicos.html">Serviços</a>
+
+                                </li>
+
+                               
+
+                                <li class="nav-item">
+
+                                    <a class="nav-link scroll" href="orcamento.html">Orçamento</a>
+
+                                </li>
+
+                                <li class="nav-item">
+
+                                    <a class="nav-link scroll" href="contato2.html">Contato</a>
+
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </nav>
+    
+    </header>
+       
+        <div class="container-fluid">
+            <!--formulario-->
+            <section class="row bg-light" id="espaco">
+                <div class="col-md-10 offset-md-1 col-12">
+                    <form name="formCadastro" id="formCadastro" method="post">
+                        <div class="row">
+                            <div class="col-12">
+                                <h1 class="text-center corVerde py-2" >Contato</h1>
+                                <h5 class="text-center">Formulario de Serviço.</h5>
+                            </div>
+
+                            <div class="form-group col-md-8 col-12">
+                                <label>Nome</label>
+                                <input type="text" name="nome" id="nome" placeholder="Nome" class="form-control" />
+                            </div>
+                            
+                            <div class="form-group col-md-4 col-12">
+                                <label>E-mail</label>
+                                <input type="email" name="email" id="email" placeholder="E-mail" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-4 col-sm-12">
+                                <label>Telefone</label>
+                                <input type="text" name="telefone" id="telefone" placeholder="(00)0000-0000" class="form-control" />
+                            </div>
+                            <div class="form-group col-md-4 col-sm-12">
+                                <label>Celular</label>
+                                <input type="text" name="celular" id="celular" placeholder="(00)00000-0000" class="form-control" />
+                            </div>
+                            <div class="form-group col-md-4 col-sm-12">
+                                <label>Quantidade de produtos</label>
+                                <input type="number" name="nproduto" id="nproduto" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6 col-sm-12">
+                                <label for="exampleFormControlSelect1">Tipo de produto</label>
+                                <select class="form-control" name="tevento" id="tevento">
+                                    <option>...</option>
+                                    <option>Couro</option>
+                                    <option>Camursa</option>
+                                    <option>Pano</option>
+                                    <option>outros</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6 col-sm-12">
+                                <label>Data de Lavagen verifique a previsão</label>
+                                <input type="date" name="data" id="data" placeholder="00/00/0000" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Mensagem</label>
+                            <textarea class="form-control" id="mensagem" name="mensagem" rows="5" placeholder="Fale o stado da sugeira"></textarea>
+                        </div>
+                        <div class="form-group ">
+                            <input type="submit" name="salvar" id="salvar" class="btn filter-button btn-lg d-block mx-auto" />    
+                        </div>
+                    </form>  
+                </div>
+               
+            </section>
+            <div class="col-12" id="espaco">
+                                 <div id="cont_b3089eacc2df4a38f45a888e300f15da"><script type="text/javascript" async src="https://www.tempo.com/wid_loader/b3089eacc2df4a38f45a888e300f15da"></script></div>
+            </div>
+        </div>
+               
+        </div>
+        <footer >
+             <div class=" copyright text-center text-white" id="espaco">
+                 
+                 <p> Alemão | Limpeza e Higienização  Copyright 2018. Powered by</p>
+
+                                <a class="navbar-brand text-center" href="..." target="_blank" class="text-light">
+                                    <img src="fotos/face.png" width="50" height="50" alt="">
+
+                                </a>
+
+                                <a class="navbar-brand text-center" href="..." target="_blank" class="text-light">
+                                    <img src="fotos/insta.png" width="50" height="50" alt="">
+
+                                </a>
+
+
+                            </div>
+            
+        
+           
+    </footer>
+            
+        </body>
+    
+</html>

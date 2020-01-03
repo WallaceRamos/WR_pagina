@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@font-face{
+	font-family: 'FontLogo';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+}	
+body{
+    font-family: Arial,sans-serif;
+    padding-top: 54px;
+}
+
+
+#menu{
+    
+    font-family: sans-serif;
+    background-color: #0062cc;
+}
+#fonte{
+    font-size: 20pt;
+    font-family: 'FontLogo';
+}
+#h1{
+    font-size: 40pt;
+    font-family: 'FontLogo',sans-serif;
+    clear: both;
+}
+#h2{
+    font-size: 25pt;
+    font-family: 'FontLogo',sans-serif;
+}
+
+/*=============================
+          conteudo
+===============================*/
+.borda{
+    border-bottom: 20px;
+}
+section{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+ul{
+    padding-bottom: 10px;
+}
+
+#interface{
+    background-color: #545b62;
+}
+
+/*=============================
+         rodapé 
+===============================*/
+
+footer{
+    background-color: #0062cc;
+}
+footer{
+    padding-bottom: 20px;
+}

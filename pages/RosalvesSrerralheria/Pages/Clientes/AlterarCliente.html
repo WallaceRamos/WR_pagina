@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <link href="../../Content/css/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="../../Content/css/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="../../Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../Content/css/estilo.css" rel="stylesheet" />
+
+    <script src="../../Scripts/jquery-3.0.0.min.js"></script>
+
+    <script src="../../Scripts/bootstrap.min.js"></script>
+
+
+    <script src="../../Scripts/jquery.validate.min.js"></script>
+
+    <script src="../../Scripts/additional-methods.min.js"></script>
+
+    <script src="../../Scripts/localization/messages_pt_BR.min.js"></script>
+
+    <script src="../../Scripts/notify.min.js"></script>
+
+    <script src="../../Scripts/jquery.mask.min.js"></script>
+
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $("#form1").validate({
+                rules: {
+                    txtNome: {
+                        required: true,
+                        maxlength: 100
+
+                    },
+                    txtSobrenome: {
+                        required: true,
+                        maxlength: 100
+
+                    },
+                    txtEmail: {
+                        required: true,
+                        email: true
+                    },
+
+                    txtCelular: {
+                        required: true,
+                        maxlength: 14,
+                        minlength: 14
+
+                    },
+                    txtCpf: {
+                        required: true,
+                        maxlength: 14,
+                        minlength: 14
+
+                    },
+                    txtCnpj: {
+
+                        maxlength: 18,
+                        minlength: 18
+
+                    },
+                    txtTelefoneComercial: {
+
+                        maxlength: 13,
+                        minlength: 13
+
+                    },
+
+                    txtSenha: {
+                        required: true,
+                        maxlength: 200,
+                        minlength: 8
+
+                    }
+
+                },
+
+            })
+        })
+        $(document).ready(function () {
+            $("#txtCelular").mask("(00)00000-0000")
+            $("#txtTelefoneComercial").mask("(00)0000-0000")
+            $("#txtCpf").mask("000.000.000/00")
+            $("#txtCnpj").mask("00.000.000/0000-00")
+
+
+        })
+
+
+
+    </script>
+
+    <title>Início | Rosalves Serralheria</title>
+</head>
+<body>
+
+
+
+    <form id="form1" runat="server">
+        <!--cabeçalho-->
+        <header>
+
+           <!--Menu-->
+            <nav class="navbar navbar-expand-lg navbar-dark " id="menu">
+                <div class="container">
+                    <a class="navbar-brand" href="">Rosalves Serralheria
+                    </a>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                        <ul class="navbar-nav mx-auto ">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../Clientes/indexCliente.html">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../Clientes/CadastrarSolicitacao.html">Nova solicitação</a>
+                            </li>
+
+                            <li class="dropdown ">
+                                <a class=" dropdown-toggle nav-link text-white" href="#" data-toggle="dropdown">Minhas solicitações
+                                </a>
+                                <div class="dropdown-menu ">
+                                    <a class="dropdown-item " href="../Clientes/ListarAtiva.html">Salvas</a>
+                                    <a class="dropdown-item " href="../Clientes/ListarInativa.html">Dasativadas</a>
+                                    <a class="dropdown-item " href="../Clientes/ListarConfirmada.html">Enviadas para análise</a>
+                                    <a class="dropdown-item " href="../Clientes/ListarConfirmada.html">Em produção</a>
+                                    <a class="dropdown-item" href="../Clientes/ListarFinalizada.html">Finalizadas
+                                        <asp:Literal ID="lblProgress" runat="server"></asp:Literal></a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../Clientes/AlterarCliente.html">Perfil</a>
+                            </li>
+
+
+                            <li class="nav-item  ">
+                                <a class="btn btn btn-dark text-white">Tela principal do Cliente</a>
+                            </li>
+
+                            <li class="nav-item  ">
+                                <a class="nav-link text-dark btn btn-light" href="../index.html">Sair</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- fim do menu -->
+        </header>
+        <!--Formulario para cadastro dentro do card-->
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-12 col-md-7 col-lg-5 mx-auto">
+
+                    <div class="card card-signin my-5">
+
+                        <div class="card-body">
+
+                            <!--Titulo-->
+                            <h5 class="card-title text-center  py-2">Meu dados:</h5>
+
+
+
+
+
+                            <!--Formulario Nome-->
+                            <div class="form-group ">
+
+                                <label>Nome</label>
+                            
+                                <input type="text" name="txtNome" id="txtNome" placeholder="Nome" class="form-control"/>
+
+                                
+                            </div>
+                            <div class="form-group ">
+
+                                <label>Sobrenome</label>
+                            
+                                <input type="text" name="txtSobrenome" id="txtSobrenome" placeholder="Sobrenome" class="form-control"/>
+
+                            </div>
+
+
+                            <div class="form-group ">
+
+                                <label>CPF</label>
+                            
+                                <input type="text" name="txtCpf" id="txtCpf" placeholder="000.000.000/00" class="form-control"/>
+
+
+                            </div>
+
+
+                            <div class="form-group ">
+
+                                <label>CNPJ</label>
+                            
+                                <input type="text" name="txtCnpj" id="txtCnpj" placeholder="00.000.000/0000-00" class="form-control"/>
+
+                            </div>
+
+                            <div class="form-group ">
+                                <label>Celular</label>
+                            
+                                <input type="text" name="txtCelular" id="txtCelular" placeholder="(00) 0.0000-0000" class="form-control"/>
+
+                            </div>
+
+                            <div class="form-group ">
+
+                                <label>Telefone Comercial:</label>
+                            
+                                <input type="text" name="txtTelefoneComercial" id="txtTelefoneComercial" placeholder="(00)0000-0000" class="form-control"/>
+
+                            </div>
+
+
+                            <div class="form-group ">
+
+
+                                <label>Email:</label>
+                            
+                                <input type="email" name="txtEmail" id="txtEmail" placeholder="E-mail" class="form-control"/>
+
+                            </div>
+
+
+
+                            <div class="text-center">
+
+                                <a class="btn btn-lg btn-dark text-white" Style="background-color: #000;" ID="btnAlterar"  >Alterar</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!--Mensagem-->
+        <div class="text-center">
+            <h4 style="color:green">--Mensagem--</h4>
+        </div>
+        <div style="padding-bottom: 100px;"></div>
+    </form>
+
+
+</body>
+</html>
+

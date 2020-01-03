@@ -1,0 +1,165 @@
+@charset "UTF-8";
+@font-face{
+	font-family: 'FontLogo';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+}	
+body{
+    font-family: Arial,sans-serif;
+    
+}
+#menu{
+    font-size: 20pt;
+    font-family: 'FontLogo',sans-serif;
+}
+
+#h1{
+    font-size: 40pt;
+    font-family: 'FontLogo',sans-serif;
+    clear: both;
+}
+#h2{
+    font-size: 25pt;
+    font-family: 'FontLogo',sans-serif;
+}
+
+/*=============================
+          conteudo
+===============================*/
+
+section{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+ul{
+    padding-bottom: 10px;
+}
+/*=============================
+          titulo do artigo 
+===============================*/
+
+article#noticia-principal h2{
+        font-size: 25pt;
+        color: #606060;
+        background-color: #dddddd;
+        text-align: center;
+        margin-top: 10px;
+     
+}
+/*=============================
+          interface/cor  
+===============================*/
+
+#interface{
+    background-color: #545b62;
+}
+
+/*=============================
+formatação de imagens com legendas    
+===============================*/
+
+
+figure.foto-legenda{
+	position: relative;
+	
+	border: 6px solid white;
+	box-shadow: 1px 1px 1px gray;
+}
+figure.foto-legenda img{
+width: 100%;
+height: 100%;	
+}
+figure.foto-legenda figcaption{
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,.2);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	transition: opacity 1s;
+}
+ .member-info{
+	padding-top: 70%;
+}
+
+figure.foto-legenda:hover figcaption{
+	opacity: 1;
+}
+/*=============================
+         rodapé 
+===============================*/
+
+footer{
+    background-color: #545b62;
+}
+footer{
+    padding-bottom: 20px;
+}
+/*=============================
+          calendario 
+===============================*/
+
+#calendario{
+      position: relative;
+     width: 70%;
+     margin: 0px auto;
+} 
+
+/*=============================
+          galleria  de fotos
+           com legenda
+===============================*/
+
+.gallery-title{
+    font-size: 36px;
+    color: #3F6184;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.filter-button{
+    font-size: 18px;
+    border: 2px solid #3F6184;
+	padding:5px 10px;
+    text-align: center;
+    color: #3F6184;
+    margin-bottom: 30px;
+	background:transparent;
+}
+.filter-button:hover,
+.filter-button:focus,
+.filter-button.active{
+    color: #ffffff;
+    background-color:#3F6184;
+	outline:none;
+}
+.gallery_product{
+    margin: 0px;
+	padding:0;
+	position:relative;
+}
+
+/*=================
+    serviço
+===================*/
+.circle {
+  background-color: #aaa;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#espaco{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+li{
+   
+    padding-bottom: 10px;
+}
+ul{
+    list-style-type:none
+}

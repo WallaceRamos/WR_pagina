@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Informatica | Suporte</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/jquery.validate.min.js" type="text/javascript"></script>
+        <script src="js/additional-methods.min.js" type="text/javascript"></script>
+        <script src="js/localization/messages_pt_BR.js" type="text/javascript"></script>
+        <script src="js/notify.min.js" type="text/javascript"></script>
+        <script src="js/jquery.mask.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#formCadastro").validate({
+                    rules: {
+                        nome: {
+                            required: true,
+                            maxlength: 40,
+                            minlength: 5
+
+                        },
+                        sobrenome: {
+                            required: true,
+                            maxlength: 40,
+                            minlength: 5
+
+                        },
+
+                        email: {
+                            required: true,
+                            email: true
+                        },
+
+                        celular: {
+                            required: true,
+                            maxlength: 14,
+                            minlength: 14
+
+                        },
+                        telefone: {
+                            required: true,
+                            maxlength: 13,
+                            minlength: 13
+
+                        },
+                        nprodutos: {
+                            required: true,
+                            maxlength: 100,
+                            minlength: 2
+
+                        },
+                        tevento: {
+                            required: true,
+                            maxlength: 40,
+                            minlength: 0
+
+                        },
+                        data: {
+                            required: true,
+                            maxlength: 10,
+                            minlength: 10
+
+                        },
+                        mensagem: {
+                            required: true,
+                            maxlength: 200,
+                            minlength: 10,
+                            minWords: 3
+                        },
+
+                    },
+                    submitHandler: function (form) {
+                        $.notify("Orçamento enviado com sucesso", "success")
+                    }
+                })
+            })
+            $(document).ready(function () {
+                $("#celular").mask("(00)00000-0000")
+
+
+            })
+            $(document).ready(function () {
+                $("#telefone").mask("(00)0000-0000")
+
+
+            })
+
+
+
+
+
+        </script>
+    </head>
+
+    <body>
+        
+    <!-- Navigation -->
+    
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="menu">
+      <div class="container">
+          <a class="navbar-brand" id="fonte" href="index.html">Informatica</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servico.html">Suporte</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+            
+    <div class="container-fluid">
+            <!--formulario-->
+            <section class="row bg-light">
+                <div class="col-md-10 offset-md-1 col-12">
+                    <form name="formCadastro" id="formCadastro" method="post">
+                        <div class="row">
+                            <div class="col-12">
+                                <h1 class="text-center corVerde py-2">Contato</h1>
+                                <h5 class="text-center">Formulario de Retirada.</h5>
+                            </div>
+
+                            <div class="form-group col-md-8 col-12">
+                                <label>Nome</label>
+                                <input type="text" name="nome" id="nome" placeholder="Nome" class="form-control" />
+                            </div>
+                            
+                            <div class="form-group col-md-4 col-12">
+                                <label>E-mail</label>
+                                <input type="email" name="email" id="email" placeholder="E-mail" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-4 col-sm-12">
+                                <label>Telefone</label>
+                                <input type="text" name="telefone" id="telefone" placeholder="(00)0000-0000" class="form-control" />
+                            </div>
+                            <div class="form-group col-md-4 col-sm-12">
+                                <label>Celular</label>
+                                <input type="text" name="celular" id="celular" placeholder="(00)00000-0000" class="form-control" />
+                            </div>
+                        
+                            <div class="form-group col-md-4 col-sm-12">
+                                <label for="exampleFormControlSelect1">Tipo de produto</label>
+                                <select class="form-control" name="tevento" id="tevento">
+                                    <option>...</option>
+                                    <option>Hardware</option>
+                                    <option>Dispositivo de Entrada</option>
+                                    <option>Dispositivo de Saida</option>
+                                    <option>Equipamentos de Manuntenção</option>
+                                </select>
+                            </div>
+                        
+                        </div>
+                        <div class="form-group">
+                            <label>Mensagem</label>
+                            <textarea class="form-control" id="mensagem" name="mensagem" rows="5" placeholder="Fale qual e o proble e qual e o equipamento"></textarea>
+                        </div>
+                        <div class="form-group ">
+                            <input type="submit" name="salvar" id="salvar" class="btn filter-button btn-lg d-block mx-auto" />    
+                        </div>
+                    </form>  
+                </div>
+               
+            </section>
+
+            <!--Rodapé-->
+            
+    <!-- Footer -->
+    <footer class="py-5 bg-primary">
+            <div class="container">
+          
+              <p class="m-0 text-center text-white" style="padding-bottom: 20px;"> Copyright &copy; By wallace Ramos 2018</p>
+            </div>
+            <!-- /.container -->
+          </footer>
+        </div>
+    </body>
+</html>

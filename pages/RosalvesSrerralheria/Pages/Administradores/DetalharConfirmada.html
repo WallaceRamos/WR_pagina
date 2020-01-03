@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+
+    <link href="../../Content/css/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="../../Content/css/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="../../Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../Content/css/estilo.css" rel="stylesheet" />
+    <link href="../../Content/css/dashboard.css" rel="stylesheet" />
+
+    <script src="../../Scripts/jquery-3.0.0.min.js"></script>
+
+    <script src="../../Scripts/bootstrap.min.js"></script>
+
+    <script src="../../Scripts/jquery.validate.min.js"></script>
+
+    <script src="../../Scripts/additional-methods.min.js"></script>
+
+    <script src="../../Scripts/localization/messages_pt_BR.min.js"></script>
+
+    <script src="../../Scripts/notify.min.js"></script>
+
+    <script src="../../Scripts/jquery.mask.min.js"></script>
+
+
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+            $("#form1").validate({
+                rules: {
+                    ddlLamina: {
+                        required: true,
+
+                    },
+                    ddlPintura: {
+                        required: true,
+
+                    },
+
+                    txtAltura: {
+                        required: true,
+
+                    },
+                    txtLargura: {
+                        required: true,
+
+                    },
+                    rblLocalizacaoParede: {
+
+                        required: true,
+
+                    },
+                    rblAcessoEmergencia: {
+                        required: true,
+
+                    },
+
+                    rblControleRemoto: {
+                        required: true,
+
+
+                    }
+
+                },
+
+            })
+        })
+
+
+
+
+
+    </script>
+
+    <title>Rosalves Serralheria | Home Adiministrador</title>
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+
+           <!--Menu superio -->
+           <nav class="navbar navbar-dark fixed-top  flex-md-nowrap p-0 shadow" style="background-color: #000;">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="">Rosalves Serralheria</a>
+
+            <div class="text-right ">
+                <a Class="btn btn-dark text-white" ID="lblTitulo" >Tela Principal do Administrador</a>
+            </div>
+
+        </nav>
+        <!--fim do Menu superio -->
+
+        <!-- layout em container -->
+        <div class="container-fluid">
+
+            <!--Menu lateral -->
+
+            <div class="row">
+
+                <nav class="navbar col-md-2 d-none d-md-block  sidebar" style="background-color: #000;">
+
+                    <div class="sidebar-sticky">
+
+                        <ul class="nav flex-column">
+
+                            <li class="nav-item">
+                                <a class="nav-link btn  text-white" href="../Administradores/indexAdministrador.html">Início </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link btn  text-white" href="../Administradores/ListarCliente.html">Clientes</a>
+                            </li>
+
+                            <li class="dropdown nav-item text-nowrap">
+                                <a class=" dropdown-toggle nav-link text-white btn btn-dark" style="background-color: #000;" href="#" data-toggle="dropdown">Solicitações</a>
+                                <div class="dropdown-menu dropdown-menu-md ">
+                                    <a class="dropdown-item nav-link" href="../Administradores/ListarConfirmada.html">Confirmada pelo cliente</a>
+                                    <a class="dropdown-item nav-link" href="../Administradores/ListarCancelada.html">Canceladas</a>
+                                </div>
+
+                            </li>
+
+                            <li class="dropdown nav-item text-nowrap">
+                                <a class=" dropdown-toggle nav-link text-white btn btn-dark" style="background-color: #000;" href="#" data-toggle="dropdown">Produções</a>
+                                <div class="dropdown-menu dropdown-menu-md ">
+                                    <a class="dropdown-item nav-link" href="../Administradores/ListarProducao.html">Em andamento</a>
+                                    <a class="dropdown-item nav-link" href="../Administradores/ListarFinalizada.html">Finalizadas</a>
+                                </div>
+                            </li>
+
+                             <li class="dropdown nav-item text-nowrap">
+                                <a class=" dropdown-toggle nav-link text-white btn btn-dark" style="background-color: #000;" href="#" data-toggle="dropdown">Relátorios</a>
+                                <div class="dropdown-menu dropdown-menu-md ">
+                                    <a class="dropdown-item nav-link" href="../Administradores/RelatorioVenda.html">Conversão em vendas</a>
+                                    <a class="dropdown-item nav-link" href="../Administradores/RelatorioProducao.html">Produtividade</a>
+                                </div>
+
+                            </li>
+                            
+                            <br />
+                            <br />
+                            <br />
+                            <li class="nav-item text-nowrap">
+                                <a href="../index.html" class="nav-link btn btn-light  text-dark" iD="lbFazerLogout" >Sair</a>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </nav>
+
+            </div>
+            <!--Fim do Menu lateral -->
+                <!--Conteudo -->
+                <div role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                   
+                    <div>
+                        <div class="col-12 h3 text-center text-success">
+                            <asp:Label ID="lblMensagem" runat="server" Text=""></asp:Label>
+                        </div>
+
+                        <div class="container-fluid row">
+
+
+
+
+                            <div class="col-12 h3 text-center">
+
+                                <p ID="logo" >Detalhes de solicitação</p>
+
+                            </div>
+
+
+
+                            <div class="form-group col-sm-12 col-md-6">
+
+                                <label for="lblLamina">Lâmina</label>
+                                <select class="form-control" id="lblLamina">
+                                  <option>Selecione...</option>
+                                  <option>Não tenho certeza</option>
+                                  <option>Perfurada</option>
+                                  <option>Lisa</option>                               
+                                </select>
+                </div>
+
+                <div class="form-group col-sm-12 col-md-6">
+
+                        <label for="lblLamina">Lâmina</label>
+                        <select class="form-control" id="lblLamina">
+                          <option>Selecione...</option>
+                          <option>Não tenho certeza</option>
+                          <option>Sem pintura</option>
+                          <option>Azul</option> 
+                          <option>Branco</option> 
+                          <option>Cinza</option> 
+                          <option>Dourado</option> 
+
+                        </select>
+        </div>
+
+                    
+        
+
+                <div class="form-group col-sm-12 col-md-6">
+
+                    
+                        <label>Altura (Metros):</label>
+                            
+                        <input type="decimal" name="txtAltura" id="txtAltura" placeholder="p. ex., 12,36" class="form-control"/>
+
+                </div>
+
+                <div class="form-group col-sm-12 col-md-6">
+
+                        <label>Largura (Metros):</label>
+                            
+                        <input type="decimal" name="txtLargura" id="txtLargura" placeholder="p. ex., 12,36" class="form-control"/>
+
+
+                   
+                </div>
+
+                <div class="col-md-6 col-sm-12 ">
+
+
+                        <label for="rblLocalizacaoParede">Localização na parede</label>
+                        <select class="form-control" id="rblLocalizacaoParede">
+                          <option>Não sei (Preciso de ajuda para decidir)!</option>
+                          <option>Fora da parede</option>
+                          <option>Dentro da parede</option>
+                          
+                        </select>
+
+
+
+
+                </div>
+
+
+
+
+
+            <div class="form-group col-sm-12 col-md-6">
+
+
+                    <label for="lblAcessoEmergencia">Acesso Emergência</label>
+                    <select class="form-control" id="lblAcessoEmergencia">
+                      <option>Não sei (Preciso de ajuda para decidir)!</option>
+                      <option>Não</option>
+                      <option>Sim</option>
+                      
+                    </select>
+
+                
+                </div>
+         
+
+            <div class="form-group col-sm-12 col-md-6">
+
+
+                    <label for="lblControleRemoto">Controle remoto</label>
+                    <select class="form-control" id="lblControleRemoto">
+                      <option>Não sei (Preciso de ajuda para decidir)!</option>
+                      <option>Não</option>
+                      <option>Sim</option>
+                      
+                    </select>
+                
+            </div>
+
+            <div class="form-group col-sm-12 col-md-12">
+
+                
+                    <label for="txtDescricao">Descrição:</label>
+                    <textarea class="form-control" id="txtDescricao" rows="3"></textarea>
+              
+            </div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+
+                <div class="text-center form-group col-sm-12 col-md-4">
+                    <a  Class="btn btn-dark text-center text-white" Style="background-color: #000000; "> Alterar</a>
+               </div>
+
+
+                 <div class="text-center form-group col-sm-12 col-md-4">
+                   <a Class="btn btn-dark text-center text-white" Style="background-color:#000;">Confirmar Pedido</a>
+               </div>
+
+
+               <div class="text-center form-group col-sm-12 col-md-4">
+                    <a  Class="btn btn-dark text-center text-white" Style="background-color: #000000;">Desativar </a>
+               </div>
+                        </div>
+                    </div>
+                    <div style="padding-bottom: 100px; padding-top: 100px;">
+                    </div>
+
+
+                </div>
+                <!--Fim do Conteudo -->
+
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>

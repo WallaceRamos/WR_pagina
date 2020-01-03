@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+        <link href="../../Content/css/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="../../Content/css/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="../../Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../Content/css/estilo.css" rel="stylesheet" />
+
+    <script src="../../Scripts/jquery-3.0.0.min.js"></script>
+
+    <script src="../../Scripts/bootstrap.min.js"></script>
+
+
+    <script src="../../Scripts/jquery.validate.min.js"></script>
+
+    <script src="../../Scripts/additional-methods.min.js"></script>
+
+    <script src="../../Scripts/localization/messages_pt_BR.min.js"></script>
+
+    <script src="../../Scripts/notify.min.js"></script>
+
+    <script src="../../Scripts/jquery.mask.min.js"></script>
+
+
+    
+ <script type="text/javascript">
+
+     $(document).ready(function () {
+         $("#form1").validate({
+             rules: {
+                 txtNome: {
+                     required: true,
+                     maxlength: 100
+
+                 },
+                 txtSobrenome: {
+                     required: true,
+                     maxlength: 100
+
+                 },
+                 txtEmail: {
+                     required: true,
+                     email: true
+                 },
+
+                 txtCelular: {
+                     required: true,
+                     maxlength: 14,
+                     minlength: 14
+
+                 },
+                 txtCpf: {
+                     required: true,
+                     maxlength: 14,
+                     minlength: 14
+
+                 },
+                 txtCnpj: {
+
+                     maxlength: 18,
+                     minlength: 18
+
+                 },
+                 txtTelefoneComercial: {
+
+                     maxlength: 13,
+                     minlength: 13
+
+                 },
+
+                 txtSenha: {
+                     required: true,
+                     maxlength: 200,
+                     minlength: 8
+
+                 }
+
+             },
+
+         })
+     })
+     $(document).ready(function () {
+         $("#txtCelular").mask("(00)00000-0000")
+         $("#txtTelefoneComercial").mask("(00)0000-0000")
+         $("#txtCpf").mask("000.000.000/00")
+         $("#txtCnpj").mask("00.000.000/0000-00")
+
+
+     })
+
+
+
+    </script>
+
+    <title>Início | Rosalves Serralheria</title>
+</head>
+<body>
+
+
+
+    <form id="form1" runat="server">
+        <!--cabeçalho-->
+        <header>
+
+             <!--Menu-->
+            <nav class="navbar navbar-expand-lg navbar-dark " id="menu">
+                <div class="container">
+                    <a class="navbar-brand" href="">Rosalves Serralheria
+                    </a>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                        <ul class="navbar-nav mx-auto ">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../Clientes/indexCliente.html">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../Clientes/CadastrarSolicitacao.html">Nova solicitação</a>
+                            </li>
+
+                            <li class="dropdown ">
+                                <a class=" dropdown-toggle nav-link text-white" href="#" data-toggle="dropdown">Minhas solicitações
+                                </a>
+                                <div class="dropdown-menu ">
+                                    <a class="dropdown-item " href="../Clientes/ListarAtiva.html">Salvas</a>
+                                    <a class="dropdown-item " href="../Clientes/ListarInativa.html">Dasativadas</a>
+                                    <a class="dropdown-item " href="../Clientes/ListarConfirmada.html">Enviadas para análise</a>
+                                    <a class="dropdown-item " href="../Clientes/ListarConfirmada.html">Em produção</a>
+                                    <a class="dropdown-item" href="../Clientes/ListarFinalizada.html">Finalizadas
+                                        <asp:Literal ID="lblProgress" runat="server"></asp:Literal></a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../Clientes/AlterarCliente.html">Perfil</a>
+                            </li>
+
+
+                            <li class="nav-item  ">
+                                <a class="btn btn btn-dark text-white">Tela principal do Cliente</a>
+                            </li>
+
+                            <li class="nav-item  ">
+                                <a class="nav-link text-dark btn btn-light" href="../index.html">Sair</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- fim do menu -->
+        </header>
+        
+        <div class="container-fluid">
+           <div class="container-fluid">
+
+             
+     <hr class="light my-4">
+            <div class="row" >
+
+
+                <div class="col-lg-6 mx-auto text-center">
+
+
+
+                    <p class="text-faded mb-5 text-justify ">
+                    As portas de enrolar automáticas com o perfil em chapa tranvision 
+                        ou micro furos, também chamada de translúcida, apresenta-se de maneira única devido ao visual inovador,
+                        além de serem charmosas e seguras, oferecem visibilidade diária e noturna e ventilação.<br />
+                    </p>
+                    <div class="text-left">
+                                            <a class="btn btn-dark btn-xl" style="background-color: black;"  href="../Solicitacoes/CadastrarAtivo.html">Solicite já!</a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 mx-auto text-center foto-legenda">
+
+                    <img src="../../Content/fotos/porta_comercial_perfurada.jpg" />
+
+                </div>
+
+
+            </div>
+            <hr class="light my-4">
+
+            <div class="row" >
+
+
+                <div class="col-lg-6 mx-auto text-center foto-legenda">
+
+                    <img src="../../Content/fotos/porta_comercial_lisa.jpg" />
+
+                </div>
+
+
+                <div class="col-lg-6 mx-auto text-center">
+
+
+
+                    <p class="text-faded mb-5 text-justify ">
+                        As portas de enrolar automáticas com o perfil em chapa lisa,
+                        contam com o mesmo funcionamento, oferece a mesma segurança em 
+                        relação a arrombamento, o que difere nesse produto é a privacidade disposta.
+                    </p>
+                    <div class="text-right">
+                        <a class="btn btn-dark btn-xl align" style="background-color: black;"  href="../Solicitacoes/CadastrarAtivo.html">Solicitar!</a>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+    </div>
+        </div>
+        <div style="padding-bottom:100px;"></div>
+    </form>
+</body>
+</html>
+
+           
+            
+     

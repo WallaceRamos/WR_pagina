@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+  
+    <link href="../../Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../Content/css/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="../../Content/css/estilo.css" rel="stylesheet" />
+
+    <script src="../../Scripts/jquery-3.0.0.min.js"></script>
+    <script src="../../Scripts/bootstrap.min.js"></script>
+
+
+    <title>Solicitações finalizadas | Rosalves Serralheria</title>
+</head>
+<body>
+   <form id="form1" runat="server">
+         <!--cabeçalho-->
+        <header>
+
+            <!--Menu-->
+            <nav class="navbar navbar-expand-lg navbar-dark " id="menu">
+                <div class="container">
+                    <a class="navbar-brand" href="">Rosalves Serralheria
+                    </a>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                        <ul class="navbar-nav mx-auto ">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../Clientes/indexCliente.html">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../Clientes/CadastrarSolicitacao.html">Nova solicitação</a>
+                            </li>
+
+                            <li class="dropdown ">
+                                <a class=" dropdown-toggle nav-link text-white" href="#" data-toggle="dropdown">Minhas solicitações
+                                </a>
+                                <div class="dropdown-menu ">
+                                    <a class="dropdown-item " href="../Clientes/ListarAtiva.html">Salvas</a>
+                                    <a class="dropdown-item " href="../Clientes/ListarInativa.html">Dasativadas</a>
+                                    <a class="dropdown-item " href="../Clientes/ListarConfirmada.html">Enviadas para análise</a>
+                                    <a class="dropdown-item " href="../Clientes/ListarConfirmada.html">Em produção</a>
+                                    <a class="dropdown-item" href="../Clientes/ListarFinalizada.html">Finalizadas
+                                        <asp:Literal ID="lblProgress" runat="server"></asp:Literal></a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../Clientes/AlterarCliente.html">Perfil</a>
+                            </li>
+
+
+                            <li class="nav-item  ">
+                                <a class="btn btn btn-dark text-white">Tela principal do Cliente</a>
+                            </li>
+
+                            <li class="nav-item  ">
+                                <a class="nav-link text-dark btn btn-light" href="../index.html">Sair</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- fim do menu -->
+        </header>
+         <div class="container-fluid">
+            <div class="text-center h3">
+                <asp:Label ID="hlTitulo" runat="server" Text="Solicitações Finalizadas"></asp:Label>
+            </div>
+          
+            <div class="table-responsive col-md-12">
+            <table class="table table-hover table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">Código</th>
+                        <th scope="col">Lâmina</th>
+                        <th scope="col">Pintura</th>
+                        <th scope="col">Altura (Metros)</th>
+                        <th scope="col">Largura (Metros)</th>
+                     
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>@mdo</td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td >Larry the Bird</td>
+                        <td>@twitter</td>
+                        <td>@mdo</td>
+                        <td>@mdo</td>
+                        
+                      </tr>
+                    </tbody>
+                  </table>
+
+            </div>
+            </div>
+        </div>
+        <div style="padding-bottom:100px;"></div>
+    </form>
+</body>
+</html>

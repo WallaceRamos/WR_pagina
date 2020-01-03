@@ -1,0 +1,221 @@
+@charset "UTF-8";
+body {
+    
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.inteface{
+    padding: 20px;    
+}
+/*==========
+    MENU
+============*/
+
+
+#menu{
+    background-color: #000;
+}
+
+#menu li:hover {
+    background-color: #ddd;
+    color: black;
+}
+#carousel .carousel-caption{
+    text-align: right;
+}
+.carousel-caption p{
+    text-align: center;
+    font-family: Arial,sans-serif;
+    font-size: 20px;
+}
+
+#espaco{
+    padding-top: 100px;
+    padding: 50px;
+}
+
+.azul{
+    background-color: #17a2b8;
+}
+   footer{
+       background-color: #000;
+   }
+
+/*=============================
+formatação de imagens com legendas    
+===============================*/
+
+
+figure.foto-legenda{
+	position: relative;
+	
+	border: 6px solid white;
+	box-shadow: 1px 1px 1px gray;
+}
+figure.foto-legenda img{
+width: 100%;
+height: 100%;	
+}
+figure.foto-legenda figcaption{
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,.2);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	transition: opacity 1s;
+}
+ .member-info{
+	padding-top: 70%;
+}
+
+figure.foto-legenda:hover figcaption{
+	opacity: 1;
+}
+
+
+.service-items-wrapper {
+
+	
+}
+.service-items-single {
+	float: left;
+}
+
+.service-items-wrapper {
+	position: relative;
+	list-style: none;
+}
+
+.service-items-single a,
+.service-items-single img {
+	display: block;
+	position: relative;
+}
+
+.service-items-single a {
+	overflow: hidden;
+}
+
+
+.service-columns2 {
+	width: 50%;
+}
+
+.service-columns3 {
+	width: 33.33334%;
+}
+
+.service-columns4 {
+	width: 25%;
+}
+
+.service-columns5 {
+	width: 19.9%;
+}
+
+.service-columns6 {
+	width: 16.6%;
+}
+
+.service-items-single h2 {
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+	font-size: 16px;
+	font-weight: 600;
+} 
+
+.service-items-single figure {
+	position: relative;
+	overflow: hidden;
+	background: #000;
+	text-align: center;
+	cursor: pointer;
+}
+
+.service-items-single figure img {
+	position: relative;
+	display: block;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.service-items-single figure figcaption {
+	
+	color: #fff;
+	text-transform: uppercase;
+	
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.service-items-single figure figcaption::before,
+.service-items-single figure figcaption::after {
+	pointer-events: none;
+}
+
+.service-items-single figure figcaption,
+.service-items-single figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.service-items-single figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+
+.service-items-single figure.effect-chico img {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+
+}
+
+.service-items-single figure.effect-chico:hover img {
+	opacity: 0.5;
+	
+}
+
+.service-items-single figure.effect-chico figcaption {
+	padding: 3em;
+}
+
+.service-items-single figure.effect-chico figcaption::before {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	border: 1px solid #fff;
+	content: '';
+	-webkit-transform: scale(1.0);
+	transform: scale(1.0);
+}
+
+.service-items-single figure.effect-chico figcaption::before,
+.service-items-single figure.effect-chico p {
+	opacity: 1;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+
+
+
+
+.service-items-single figure.effect-chico:hover figcaption::before,
+.service-items-single figure.effect-chico:hover p {
+	opacity: 0;
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}

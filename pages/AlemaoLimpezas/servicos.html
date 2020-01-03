@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Home</title>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- CSS -->
+
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+        <!-- JavaScript -->
+        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        
+        <script src="js/jquery.mask.min.js" type="text/javascript"></script>
+        
+        <script src="js/jquery.validate.min.js" type="text/javascript"></script>
+        
+        <script src="js/additional-methods.min.js" type="text/javascript"></script>
+        
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        
+        <script src="js/bootstrap-notify.min.js" type="text/javascript"></script>
+        
+        <script src="js/localization/messages_pt_BR.min.js" type="text/javascript"></script>cript"></script>
+
+    <script type="text/javascript">
+
+
+
+        $(document).ready(function () {
+
+            //	galeria 
+
+            $(".filter-button").click(function () {
+                var value = $(this).attr('data-filter');
+
+                if (value == "all")
+                {
+                    $('.filter').show('1000');
+                } else
+                {
+                    $(".filter").not('.' + value).hide('3000');
+                    $('.filter').filter('.' + value).show('3000');
+
+                }
+
+                if ($(".button-filter").removeClass("active")) {
+                    $(this).removeClass("active");
+                }
+                $(this).addClass("active");
+            });
+        });
+//	fim da galleria 
+
+    </script>
+
+</head>
+
+
+<body>
+
+    <header>
+        <!--=================
+              menu
+        ===================-->
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top"  id="menu">
+
+            <div class="container">
+
+                <a href="index.html" title=""><img id="logoImage" class="logoImage" src="images/alemao-pq.png" alt="" title="" /></a>
+
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+
+
+                    <ul class="nav navbar-nav ml-auto">
+
+                        <li class="nav-item">
+
+                            <a class="nav-link scroll" href="index.html">Inicio</a>
+
+                        </li>
+
+                        <li >
+
+                            <a class="nav-link scroll" href="sobre.html">Sobre</a>
+
+                        </li>
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link scroll" href="portifolio.html">Portifolio</a>
+
+
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link scroll" href="servicos.html">Serviços</a>
+
+                        </li>
+
+
+
+                        <li class="nav-item">
+
+                            <a class="nav-link scroll" href="orcamento.html">Orçamento</a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link scroll" href="contato2.html">Contato</a>
+
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="container-fluid">
+        <div id="espaco">
+
+            <h1 class="text-center">Serviços</h1>
+            <hr />
+            <h5 class="text-center">Trabalhamos com a limpeza e higienização dos seguintes itens:</h5>
+
+        </div>
+        
+        <div class="row">
+
+            
+                <div class="service-items-single  service-columns6 isotope-item col-sm-4 col-md-2">
+                    <figure class="effect-chico"><img width="200" height="300" src="upload/sofas.jpg" class="img-fluid" alt="sofas"  />
+                        <figcaption>
+                            <h2>Sofás</h2>
+                            <a href="#" title="Exterior design"></a>
+                        </figcaption>
+                    </figure>
+                </div>
+           
+            <div class="service-items-single  service-columns6 isotope-item col-sm-4 col-md-2">
+                <figure class="effect-chico"><img width="200" height="300" src="upload/poltrona.jpg" class="img-fluid" alt="poltrona"  />
+                    <figcaption>
+                        <h2>Poltronas</h2>
+                        <a href="#" title="Interior design"></a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="service-items-single  service-columns6 isotope-item col-sm-4 col-md-2">
+                <figure class="effect-chico"><img width="200" height="300" src="upload/cadeira-jantar.jpg" class="img-fluid" alt="cadeira-jantar"  />
+                    <figcaption>
+                        <h2>Cadeiras de Jantar</h2>
+                        <a href="#" title="Stylish kitchens"></a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="service-items-single  service-columns6 isotope-item col-sm-4 col-md-2">
+                <figure class="effect-chico"><img width="200" height="300" src="upload/colchao.jpg" class="img-fluid " alt="colchao"  />
+                    <figcaption>
+                        <h2>Colchões</h2>
+                        <a href="#" title="Clean bathrooms"></a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="service-items-single  service-columns6 isotope-item col-sm-4 col-md-2">
+                <figure class="effect-chico"><img width="200" height="300" src="upload/carpete.jpg" class="img-fluid" alt="carpete"  />
+                    <figcaption>
+                        <h2>Carpetes</h2>
+                        <a href="#" title="Modern houses"></a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="service-items-single  service-columns6 isotope-item col-sm-4 col-md-2">
+                <figure class="effect-chico"><img width="200" height="300" src="upload/banco-carro.jpg" class="img-fluid" alt="banco-carro"  />
+                    <figcaption>
+                        <h2>Bancos de Autos</h2>
+                        <a href="#" title="Bedrooms"></a>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+       <footer >
+             <div class=" copyright text-center text-white" id="espaco">
+                 
+                 <p> Alemão | Limpeza e Higienização  Copyright 2018. Powered by</p>
+
+                                <a class="navbar-brand text-center" href="..." target="_blank" class="text-light">
+                                    <img src="fotos/face.png" width="50" height="50" alt="">
+
+                                </a>
+
+                                <a class="navbar-brand text-center" href="..." target="_blank" class="text-light">
+                                    <img src="fotos/insta.png" width="50" height="50" alt="">
+
+                                </a>
+
+
+                            </div>
+        </div>
+           
+    </footer>
+
+
+   
+</body>
+</html>

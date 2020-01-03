@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recanto Ferraz | Portifolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/estilo.css" rel="stylesheet"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
+        <!-- JavaScript -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+
+
+            $(document).ready(function () {
+
+                //	galeria 
+
+                $(".filter-button").click(function () {
+                    var value = $(this).attr('data-filter');
+
+                    if (value == "all")
+                    {
+                        $('.filter').show('1000');
+                    } else
+                    {
+                        $(".filter").not('.' + value).hide('3000');
+                        $('.filter').filter('.' + value).show('3000');
+
+                    }
+
+                    if ($(".button-filter").removeClass("active")) {
+                        $(this).removeClass("active");
+                    }
+                    $(this).addClass("active");
+                });
+            });
+            //	fim da galleria 
+
+            $(document).ready(function () {
+                $(".fancybox").fancybox({
+                    openEffect: "none",
+                    closeEffect: "none"
+                });
+            });
+
+        </script>
+    </head>
+    <body>
+        <div class="container-fluid " id="interface">
+         <!--Cabeçalho--> 
+            <header class="row">
+                <!--Titulo--> 
+                <div class="col-sm-12">
+                    <img src="fotos/logo.png" alt="" class="img-fluid d-block mx-auto py-2"/>
+                </div>
+                <!--Menu-->
+               <nav class="navbar navbar-expand-lg col-12 navbar-light" id="menu">
+                    <!--                    <div class="container">-->
+                    <a class="navbar-brand d-block d-md-none text-white" href="#">Menu</a>
+                    <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link text-white" href="index.html">Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="sobre.html">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="servicos.html">Serviços</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="portifolio.html">Portifólio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="contato.html">Contato</a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link text-white" href="Solicitacao/cadastro.jsp">Reserva</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--                    </div>-->
+                </nav>
+            </header>
+            <!--Conteudo-->
+            <section class="col-md-12 bg-light portifolio" id="portifolio">
+                <div class="gallery col-12">
+                    <h1 class="text-center corVerde py-2">Galeria</h1>
+                </div>
+                
+                <!--btoens-->
+                <div align="center" class="col-12">
+                    <button class="filter-button btn-dark" data-filter="all">Todos</button>
+                    <button class="filter-button btn-dark" data-filter="category1">Infantil</button>
+                    <button class="filter-button btn-dark" data-filter="category2">Adulto</button>
+                    <button class="filter-button btn-dark" data-filter="category3">Casamentos e Noivados</button>
+                </div>
+                <br/>
+                <!--imagens-->
+                <div class="row">
+                    <div class="gallery_product col-lg-4 col-md-6 filter category1">
+                        <figure class="foto-legenda">
+                            <img class="img-responsive img-fluid" alt="" src="fotos/infantil/infantil1.jpg" />
+                            <figcaption>
+                                <h4>Infantil 1</h4>
+                                <p>alguma coisa.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-6 filter category2">
+                        <figure class="foto-legenda">
+                            <img class=" img-fluid" alt="" src="fotos/adulto/adulto1.jpg" />
+                            <figcaption>
+                                <h4>Adulto 1</h4>
+                                <p>alguma coisa.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-6 filter category3">
+                        <figure class="foto-legenda">
+                            <img class="img-responsive img-fluid" alt="" src="fotos/noivado/noivado1.jpg" />
+                            <figcaption>
+                                <h4>Noivados 1</h4>
+                                <p>alguma coisa.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-6 filter category1">
+                        <figure class="foto-legenda">
+                            <img class="img-responsive img-fluid" alt="" src="fotos/infantil/infantil2.jpg" />
+                            <figcaption>
+                                <h4>Infantil 2</h4>
+                                <p>alguma coisa.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-6 filter category2">
+                        <figure class="foto-legenda">
+                            <img class="img-responsive img-fluid" alt="" src="fotos/adulto/adulto2.jpg" />
+                            <figcaption>
+                                <h4>Adulto 2</h4>
+                                <p>alguma coisa.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-6 filter category3">
+                        <figure class="foto-legenda">
+                            <img class="img-responsive img-fluid" alt="" src="fotos/noivado/noivado2.jpg" />
+                            <figcaption>
+                                <h4>Noivados 2</h4>
+                                <p>alguma coisa.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-6 filter category1">
+                        <figure class="foto-legenda">
+                            <img class="img-responsive img-fluid" alt="" src="fotos/infantil/infantil3.jpg" />
+                            <figcaption>
+                                <h4>Infantil 3</h4>
+                                <p>alguma coisa.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-6 filter category2">
+                        <figure class="foto-legenda">
+                            <img class="img-responsive img-fluid" alt="" src="fotos/adulto/adulto3.jpg" />
+                            <figcaption>
+                                <h4>adulto 3</h4>
+                                <p>alguma coisa.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-6 filter category3">
+                        <figure class="foto-legenda">
+                            <img class="img-responsive img-fluid" alt="" src="fotos/noivado/noivado3.jpg" />
+                            <figcaption>
+                                <h4>Noivados 3</h4>
+                                <p>alguma coisa.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-6 filter category1">
+                        <figure class="foto-legenda">
+                            <img class="img-responsive img-fluid" alt="" src="fotos/infantil/infantil4.jpg" />
+                            <figcaption>
+                                <h4>Infantil 4</h4>
+                                <p>alguma coisa.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-6 filter category2">
+                        <figure class="foto-legenda">
+                            <img class="img-responsive img-fluid" alt="" src="fotos/adulto/adulto4.jpg" />
+                            <figcaption>
+                                <h4>Adulto 4</h4>
+                                <p>alguma coisa.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-6 filter category3">
+                        <figure class="foto-legenda">
+                            <img class="img-responsive img-fluid" alt="" src="fotos/noivado/noivado4.jpg" />
+                            <figcaption>
+                                <h4>Noivados 4</h4>
+                                <p>alguma coisa.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                     <div class="gallery_product col-lg-4 col-md-6 filter category1">
+                        <figure class="foto-legenda">
+                            <img class="img-responsive img-fluid" alt="" src="fotos/infantil/infantil5.jpg" />
+                            <figcaption>
+                                <h4>Infantil 5</h4>
+                                <p>alguma coisa.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-6 filter category2">
+                        <figure class="foto-legenda">
+                            <img class="img-responsive img-fluid" alt="" src="fotos/adulto/adulto5.jpg" />
+                            <figcaption>
+                                <h4>Adulto 5</h4>
+                                <p>alguma coisa.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-6 filter category3">
+                        <figure class="foto-legenda">
+                            <img class="img-responsive img-fluid" alt="" src="fotos/noivado/noivado5.jpg" />
+                            <figcaption>
+                                <h4>Noivados 5</h4>
+                                <p>alguma coisa.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                     <div class="gallery_product col-lg-4 col-md-6 filter category1">
+                        <figure class="foto-legenda">
+                            <img class="img-responsive img-fluid" alt="" src="fotos/infantil/infantil6.jpg" />
+                            <figcaption>
+                                <h4>Infantil 6</h4>
+                                <p>alguma coisa.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-6 filter category2">
+                        <figure class="foto-legenda">
+                            <img class="img-responsive img-fluid" alt="" src="fotos/adulto/adulto6.jpg" />
+                            <figcaption>
+                                <h4>Adulto 6</h4>
+                                <p>alguma coisa.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-6 filter category3">
+                        <figure class="foto-legenda">
+                            <img class="img-responsive img-fluid" alt="" src="fotos/noivado/noivado6.jpg" />
+                            <figcaption>
+                                <h4>Noivados 6</h4>
+                                <p>alguma coisa.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+             
+            </section>             
+
+           <!--Rodapé-->
+             <footer class="row py-5">
+
+                <div class="col-md-4 col-12">
+                    <p class="text-center"> Endereço</p>
+                    <p class="text-center">Alameda Seis de Janeiro, 470 - Pedro Leme - Roseira</p>
+                    <ul class="list-social p-0 m-0">
+                        <li class="social-item"><a href="https://www.facebook.com/Ferraz.recanto/?ref=br_rs" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                        <li class="social-item"><a href="https://www.instagram.com/recanto_ferraz/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                    
+                </div>
+
+                <div class="text-center col-md-4 col-12">
+                    <ul class="list-contato">
+                        <li><i class="fas fa-envelope"></i> Email</li>
+                        <li><i class="fas fa-envelope"></i> contato@recantoferraz.com.br</li>
+                       
+                    </ul>
+                </div>
+                <div class="col-md-4 col-12">
+                    <ul class="list-contato text-center">
+                        <li><i class="fas fa-envelope"></i> Telefone</li>
+                        <li><i class="fas fa-phone"></i> (12) 3646-1389</li>
+                        <li><i class="fab fa-whatsapp"></i> (12) 99619-6003 </li>
+                    </ul>
+                    <div class="text-right">
+                    <a class="navbar-brand" href="entrar.jsp">
+                        <img src="fotos/configuracao.png" width="40" height="40" alt="">
+                    </a>
+
+                </div>
+                </div>
+                  
+            </footer>
+        </div>  
+    </body>
+
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- CSS -->
+
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+        <!-- JavaScript -->
+        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        
+        <script src="js/jquery.mask.min.js" type="text/javascript"></script>
+        
+        <script src="js/jquery.validate.min.js" type="text/javascript"></script>
+        
+        <script src="js/additional-methods.min.js" type="text/javascript"></script>
+        
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        
+        <script src="js/bootstrap-notify.min.js" type="text/javascript"></script>
+        
+        <script src="js/localization/messages_pt_BR.min.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            
+            
+
+            $(document).ready(function () {
+
+                //	galeria 
+
+                $(".filter-button").click(function () {
+                    var value = $(this).attr('data-filter');
+
+                    if (value == "all")
+                    {
+                        $('.filter').show('1000');
+                    } else
+                    {
+                        $(".filter").not('.' + value).hide('3000');
+                        $('.filter').filter('.' + value).show('3000');
+
+                    }
+
+                    if ($(".button-filter").removeClass("active")) {
+                        $(this).removeClass("active");
+                    }
+                    $(this).addClass("active");
+                });
+            });
+//	fim da galleria 
+            
+        </script>
+    
+    </head>
+    <body>
+    
+    <header>
+        <!--=================
+                  menu
+            ===================-->
+                
+
+                <nav class="navbar navbar-expand-lg navbar-dark  fixed-top"  id="menu">
+
+                    <div class="container">
+
+                        <a href="index.html" title=""><img id="logoImage" class="logoImage" src="images/alemao-pq.png" alt="" title="" /></a>
+
+                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
+                            <span class="navbar-toggler-icon"></span>
+
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarResponsive">
+                            
+
+                            <ul class="nav navbar-nav ml-auto">
+
+                                <li class="nav-item">
+
+                                    <a class="nav-link scroll" href="index.html">Inicio</a>
+
+                                </li>
+
+                                <li >
+
+                                    <a class="nav-link scroll" href="sobre.html">Sobre</a>
+
+                                </li>
+                                 <li class="nav-item dropdown">
+        
+                                      <a class="nav-link scroll" href="portifolio.html">Portifolio</a>
+        
+                                 
+      
+                                 </li>
+
+                                <li class="nav-item">
+
+                                    <a class="nav-link scroll" href="servicos.html">Serviços</a>
+
+                                </li>
+
+                               
+
+                                <li class="nav-item">
+
+                                    <a class="nav-link scroll" href="orcamento.html">Orçamento</a>
+
+                                </li>
+
+                                <li class="nav-item">
+
+                                    <a class="nav-link scroll" href="contato2.html">Contato</a>
+
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </nav>
+    
+    </header>
+       
+        <div class="container-fluid">
+   
+         <!--==========================
+                       Portfolio
+                ===========================-->
+
+                <section id="portifolio" >
+
+                    <div class="container-fluid" id="espaco">
+
+
+
+                        <h3 class="section-title text-center">Sofas e Poltronas</h3>
+
+
+
+
+
+                        <div align="center" id="espaco">
+
+                            <button class="filter-button btn-dark" data-filter="all">Todos</button>
+
+                            <button class="filter-button btn-dark" data-filter="category1">Antes</button>
+
+                            <button class="filter-button btn-dark" data-filter="category2">Depois</button>
+
+                            
+
+                        </div>
+
+
+
+
+                        <div class="row">
+
+                            <div class="gallery_product col-lg-3  col-sm-12 filter category1">
+
+                                <figure class="foto-legenda">
+
+                                    <img src="upload/1a.jpg" class="img-fluid" alt="">
+
+                                   
+
+                                    <figcaption>
+
+                                        <h4>Sujo</h4>
+
+                                    </figcaption>
+
+                                </figure>
+                            </div>
+
+                            <div class="gallery_product col-lg-3 col-sm-12 filter category2">
+
+                                <figure class="foto-legenda">
+
+                                    <img src="upload/1d.jpg" class="img-fluid" alt="">
+
+                                    
+
+                                    <figcaption>
+
+                                        <h4>Limpo</h4>
+
+
+                                    </figcaption>
+
+                                </figure>
+                            </div>
+
+                            <div class="gallery_product col-lg-3 col-sm-12 filter category1">
+
+                                <figure class="foto-legenda">
+
+                                    <img src="upload/2a.jpg" class="img-fluid" alt="">
+
+                                    
+
+                                    <figcaption>
+
+                                        <h4>Sujo</h4>
+
+
+                                    </figcaption>
+
+                                </figure>
+                            </div>
+
+                            <div class="gallery_product col-lg-3  col-sm-12 filter category2">
+
+                                <figure class="foto-legenda">
+
+                                    <img src="upload/2d.jpg" class="img-fluid" alt="">
+
+                                    
+
+                                    <figcaption>
+
+                                        <h4>Limpo</h4>
+
+
+                                    </figcaption>
+
+                                </figure>
+                            </div>
+
+                            <div class="gallery_product col-lg-3 col-sm-12 filter category1">
+
+                                <figure class="foto-legenda">
+
+                                    <img src="upload/3a.jpg" class="img-fluid" alt="">
+
+                                   
+                                    <figcaption>
+
+                                        <h4>Sujo</h4>
+
+
+                                    </figcaption>
+
+                                </figure>
+                            </div>
+
+
+
+                            <div class="gallery_product col-lg-3 col-sm-12 filter category2">
+
+                                <figure class="foto-legenda">
+
+                                    <img src="upload/3d.jpg" class="img-fluid" alt="">
+
+  
+
+                                    <figcaption>
+
+                                        <h4>Limpo</h4>
+
+                                        
+
+                                    </figcaption>
+
+                                </figure>
+                            </div>
+                            
+                            <div class="gallery_product col-lg-3 col-sm-12 filter category1">
+
+                                <figure class="foto-legenda">
+
+                                    <img src="upload/4a.jpg" class="img-fluid" alt="">
+
+
+
+                                    <figcaption>
+
+                                        <h4>Sujo</h4>
+
+                                        
+
+                                    </figcaption>
+
+                                </figure>
+                            </div>
+                            
+                            <div class="gallery_product col-lg-3 col-sm-12 filter category2">
+
+                                <figure class="foto-legenda">
+
+                                    <img src="upload/4d.jpg" class="img-fluid" alt="">
+
+  
+
+                                    <figcaption>
+
+                                        <h4>Limpo</h4>
+
+                                        
+
+                                    </figcaption>
+
+                                </figure>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section><!-- #portfolio -->
+
+    </div>
+        
+        <section class="azul text-center" id="espaco">
+                                               
+            <p class="text-center text-white" >Precisando Higienizar seu estofado ?</p>
+            
+            <a class="btn btn-dark" href="orcamento.html" role="button">Faça um Orçamento</a>
+         
+        </section>
+        <footer >
+             <div class=" copyright text-center text-white" id="espaco">
+                 
+                 <p> Alemão | Limpeza e Higienização  Copyright 2018. Powered by</p>
+
+                                <a class="navbar-brand text-center" href="..." target="_blank" class="text-light">
+                                    <img src="fotos/face.png" width="50" height="50" alt="">
+
+                                </a>
+
+                                <a class="navbar-brand text-center" href="..." target="_blank" class="text-light">
+                                    <img src="fotos/insta.png" width="50" height="50" alt="">
+
+                                </a>
+
+
+                            </div>
+        </div>
+           
+    </footer>
+            
+        </body>
+    
+</html>
