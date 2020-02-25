@@ -1,10 +1,10 @@
 # Meu Portifolio
-> Acesse  [Wallace Ramos,](https://wallaceramos.github.io/) para ver o portifolio em tempo real.
+> Acesse  [Wallace Ramos,](https://wallaceramos.github.io/) para ver em tempo real.
 
 
 
 
-![web-mobile](https://user-images.githubusercontent.com/41756547/73211930-e9cac280-412b-11ea-8d5a-3583fca0f0f7.png)
+![web-mobile](https://raw.githubusercontent.com/WallaceRamos/wallaceramos.github.io/master/img/exp.png)
 
 ## 🤔 O que é?
 
