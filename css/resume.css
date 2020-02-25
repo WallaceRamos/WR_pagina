@@ -1,7 +1,13 @@
+
+/*=============================
+         Corpo do site    
+===============================*/
+
 body {
   font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   padding-top: 44px;
-  color: #868e96;
+  color: #fff;
+  background-color: rgb(15, 15, 15);
   
 }
 .centro{
@@ -10,9 +16,6 @@ body {
 #espaco{
    margin-top: 100px;
 }
-
-
-
 
 h1,
 h2,
@@ -23,7 +26,7 @@ h6 {
   font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 700;
   text-transform: uppercase;
-  color: #343a40;
+  color: #fff;
 }
 
 h1 {
@@ -39,59 +42,23 @@ h3 {
   font-size: 2rem;
 }
 
-p.lead {
-  font-size: 1.15rem;
-  font-weight: 400;
+
+.bg-primary {
+  background-color: #0691ee !important;
 }
 
-.subheading {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  font-size: 1.5rem;
+.text-primary {
+  color: #0691ee !important;
 }
 
-.social-icons a {
-  display: inline-block;
-  height: 3.5rem;
-  width: 3.5rem;
-  background-color: #495057;
-  color: #fff !important;
-  border-radius: 100%;
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 3.5rem;
-  margin-right: 1rem;
+a {
+  color: #fff;
 }
 
-.social-icons a:last-child {
-  margin-right: 0;
+a:hover, a:focus, a:active {
+  color: #0691ee;
+  text-decoration-line: none;
 }
-
-.social-icons a:hover {
-  background-color: #0056b3;
-}
-
-.dev-icons {
-  font-size: 3rem;
-}
-
-.dev-icons .list-inline-item i:hover {
-  color: #0056b3;
-}
-
-#sideNav .navbar-nav .nav-item .nav-link {
-  font-weight: 800;
-  letter-spacing: 0.05rem;
-  text-transform: uppercase;
-}
-
-#sideNav .navbar-toggler:focus {
-  outline-color: #0056b3;
-}
-
-
-
 section.resume-section {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
@@ -105,74 +72,123 @@ section.resume-section .resume-item .resume-date {
 
 
 
-.bg-primary {
-  background-color: #0056b3 !important;
+
+/*=============================
+         Corpo do site    
+===============================*/
+
+
+/*=============================
+         Sobre    
+===============================*/
+
+p.lead {
+  font-size: 1.15rem;
+  font-weight: 400;
 }
 
-.text-primary {
-  color: #0056b3 !important;
+.subheading {
+
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1.5rem;
 }
 
-a {
-  color: #868E96;
+/*=============================
+         Sobre    
+===============================*/
+
+
+/*=============================
+         Icones   
+===============================*/
+
+
+.social-icons a {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #353535;
+  color: #fff !important;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-right: 1rem;
 }
 
-a:hover, a:focus, a:active {
-  color: #0056b3;
-  text-decoration-line: none;
+.social-icons a:last-child {
+  margin-right: 0;
 }
 
-.btn-projects {
+.social-icons a:hover {
+  background-color: #0691ee;
+}
+
+.dev-icons {
+  font-size: 3rem;
+}
+
+.dev-icons .list-inline-item i:hover {
+  color: #0691ee;
+}
+
+
+/*=============================
+         Icones   
+===============================*/
+
+
+
+
+
+/* .btn-projects {
   background-color: #495057;
   color: #fff;
 }
 
 .btn-projects:hover, .btn-projects:focus, .btn-projects:active {
-  background-color: #0056b3;
+  background-color: #0691ee;
   color: #fff;
-}
+} */
 /*=============================
-formatação de imagens com legendas    
+        Imagem do autor       
 ===============================*/
 
 
 figure.foto-legenda{
 	position: relative;
-	
-	border: 6px solid white;
-	box-shadow: 1px 1px 1px gray;
 }
 figure.foto-legenda img{
 width: 100%;
 height: 100%;	
 }
-figure.foto-legenda figcaption{
-	opacity: 0;
-	position: absolute;
-	top: 0px;
-	background-color: rgba(0,0,0,.2);
-	color: white;
-	width: 100%;
-	height: 100%;
-	padding: 20px;
-	box-sizing: border-box;
-	transition: opacity 1s;
-}
- .member-info{
-	padding-top: 70%;
-}
-
-figure.foto-legenda:hover figcaption{
-	opacity: 1;
-}
-.circle {
+ .circle {
   background-color: #aaa;
   border-radius: 50%;
   width: 100%;
   height: 100%;
   overflow: hidden;
   position: relative;
+} 
+@media (max-width: 767px) {
+  figure.foto-legenda {
+    display: none;
+
+  }
+  figure img{
+    display: none;
+  }
+
 }
+
+/*============================
+        Imagem do autor    
+===============================*/
+
+/*=============================
+     Portifolio de Imagens    
+===============================*/
 
 
 .portfolio-item {
@@ -242,4 +258,9 @@ figure.foto-legenda:hover figcaption{
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
+  
+/*=============================
+         Portifolio    
+===============================*/
+
 }
