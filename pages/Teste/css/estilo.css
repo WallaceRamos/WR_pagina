@@ -1,0 +1,514 @@
+/*!
+ * Start Bootstrap - New Age v5.0.7 (https://startbootstrap.com/template-overviews/new-age)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-new-age/blob/master/LICENSE)
+ */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+}
+
+a {
+  color: #fdcc52;
+  transition: all .35s;
+}
+
+a:hover, a:focus {
+  color: #fcbd20;
+}
+
+hr {
+  max-width: 100px;
+  margin: 25px auto 0;
+  border-width: 1px;
+  border-color: rgba(34, 34, 34, 0.1);
+}
+
+hr.light {
+  border-color: #01a67a;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+section {
+  padding: 100px 0;
+}
+
+section h2 {
+  font-size: 50px;
+}
+
+
+
+header.Cabecalho {
+  position: relative;
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  color: white;
+  
+  background:  linear-gradient(to left, #0c292f,#0c292f);
+}
+
+header.Cabecalho .ConteudoCabecalho { 
+  
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+header.Cabecalho .ConteudoCabecalho span {
+  color: #02d77a;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+header.Cabecalho .ConteudoCabecalho h3 {
+  
+  line-height: 51px;
+  font-weight: 500;
+}
+header.Cabecalho .ConteudoCabecalho strong {
+  
+  line-height: 51px;
+  font-weight: 500;
+  color: #01a67a;
+}
+header.Cabecalho .ConteudoCabecalho p{
+  max-width: 530px;
+}
+
+header.Cabecalho .ImagemCabecalho {
+  max-width: 325px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header.Cabecalho .ImagemCabecalho .screen img {
+  border-radius: 3px;
+}
+
+@media (max-width: 991px) {
+  header.Cabecalho img{
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  header.Cabecalho {
+    height: 100vh;
+    min-height: 775px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  header.Cabecalho .ConteudoCabecalho {
+    margin-bottom: 0;
+    text-align: left;
+  }
+ 
+  header.Cabecalho .ImagemCabecalho {
+    max-width: 325px;
+  }
+}
+
+
+/* Itens */
+.Itens{
+  padding-top: 65px;
+  padding-bottom: 0px;
+  background-color: #0d0e0f;
+}
+
+.Itemtitulo {
+  width: auto;
+  margin-bottom: 150px;
+}
+
+.TituloItem {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 40px;
+  line-height: 49px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 3.2px;
+}
+
+
+
+.TextItem {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+
+.CentralizarItem {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 10px;
+  padding-left: 20px; 
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.CirculoNumero {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  margin-right: 25px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background-image: linear-gradient(45deg, #02d77a, #0c292f);
+}
+
+.NumeroItem {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.TextIten {
+  width: 70%;
+  
+  color: #fff;
+
+  line-height: 37px;
+  font-weight: 600;
+  text-align: left;
+}
+
+
+
+.footerItem {
+  padding-top: 100px;  
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+
+
+.BotaoItem {
+  
+  width: 60%;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-left: auto;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border: 2px solid #fff;
+  border-radius: 100px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  cursor: pointer;
+  display: block;
+}
+
+.BotaoItem:hover {
+  background-color: #fff;
+  transform: scale(1.05);
+  color: #1e2022;
+}
+
+/* FUNCIONALIDADES */
+.Funcionalidades {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  background-color: #0a2328;
+}
+
+
+.ItemLista {
+  width: 90%;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-left: 12px;
+  background-color: #103941;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+
+
+.Lista {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+  list-style-type: none;
+  
+}
+
+
+
+
+
+/* dowload */
+section.download {
+  color:rgb(5, 5, 5);
+  background:  #ebe8ee;
+  background:  linear-gradient(to left, #fffbfb, #d4d4d4);
+  position: relative;
+  padding: 150px 0;
+}
+
+section.download h2 {
+  font-size: 50px;
+  margin-top: 0;
+}
+
+section.download .badges .badge-link {
+  display: block;
+  margin-bottom: 25px;
+}
+
+section.download p{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+section.download .badges .badge-link:last-child {
+  margin-bottom: 0;
+}
+
+section.download .badges .badge-link img {
+  height: 60px;
+}
+
+
+
+/* TABELAS DE PREÇO */
+section.custo {
+  background: linear-gradient(to right, #0e2b31, #174650);
+  padding: 0px;
+}
+
+.custo .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.custo hr {
+  margin: 1.5rem 0;
+}
+
+.custo .TituloCartao {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+}
+
+.custo .PrecoCartao {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.custo .PrecoCartao .Tempo {
+  font-size: 0.8rem;
+}
+
+.custo ul li {
+  margin-bottom: 1rem;
+}
+
+.custo .text-muted {
+  opacity: 0.7;
+}
+
+.custo .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
+/* Effeito do card */
+
+@media (min-width: 992px) {
+  .custo .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+  .custo .card:hover .btn {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+/* foto do final */
+section.Slogan {
+  position: relative;
+  padding: 250px 0;
+  background-image: url("../img/bg-cta.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+section.Slogan .ConteudoSlogan {
+  position: relative;
+  z-index: 1;
+}
+
+section.Slogan .ConteudoSlogan h6 {
+  font-size: 30px;
+  max-width: 750px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: white;
+}
+
+  @media (min-width: 768px) {
+    section.Slogan .ConteudoSlogan h2 {
+      font-size: 80px;
+    }
+  }
+
+section.Slogan .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  padding: 25px 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #222222;
+}
+
+footer p {
+  font-size: 12px;
+  margin: 0;
+}
+
+
+
+.ContornoBotao {
+  color: white;
+  border: 1px solid;
+  border-color: white;
+}
+
+.ContornoBotao:hover, .ContornoBotao:focus, .ContornoBotao:active, .ContornoBotao.active {
+  color: white;
+  border-color: #ffffff;
+  background-color: #fda552;
+}
+
+.Botao {
+  border-radius: 300px;
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.Botao-xl {
+  font-size: 11px;
+  padding: 15px 45px;
+}
+
+
+
+
+
+.Exemplo{
+  padding-top: 100px;
+  padding-bottom: 170px;
+  background-color: #d6d6d6;
+  align-items: center;
+}
+.textExemplo {
+  color: #001e20;
+  letter-spacing: 2px;
+}
+.TituloExemplo {
+  margin-bottom: 20px;
+  color: #001e20;
+  
+  line-height: 51px;
+  font-weight: 400;
+}
+
+.mask {
+  margin: auto;
+  width: 237px;
+  height: 421px;
+  border: 2px solid #04a585;
+  border-radius: 5px;
+  box-shadow: 0 0 23px 8px rgba(0, 0, 0, 0.2);
+}
+input[type="radio"] { display: none; }
+input[type="radio"]:checked + div { display: block; }
+
+.CardSlider {
+  padding: 0px;
+}
+.CardSlider div {
+  display: none;
+  height: 100%;
+  padding: 15px;
+  text-align: center;
+  align-items: center;
+}
+.CardSlider div label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.5em;
+  bottom: 0;
+  padding-top: 10px;
+}
+.CardSlider div label:nth-child(odd) { right: 40px; }
+.CardSlider div label:nth-child(even) { left: 40px; }
+.CardSlider div > i {
+  font-size: 6em !important;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+img {
+  max-width: 100%;
+}
