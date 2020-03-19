@@ -75,25 +75,31 @@ section h2 {
 
 .ConteudoCabecalho span {
   color: #02d77a;
-  font-size: 19px;
+  font-size: 20px;
+  line-height: 37px;
+  font-weight: bold;
   letter-spacing: 2px;
   font-weight: bold;
-  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .Cabecalho .ConteudoCabecalho h2 {
   
   line-height: 51px;
   font-weight: bolder;
-  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .Cabecalho .ConteudoCabecalho strong {
-  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 51px;
   font-weight: 500;
   font-weight: bold;
   color: #02d77a;
 }
 .Cabecalho .ConteudoCabecalho p{
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 37px;
+  font-weight: bold;
   max-width: 530px;
 }
 
@@ -144,11 +150,12 @@ section h2 {
 }
 
 .TituloItem {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 20px;
   color: #fff;
   font-size: 40px;
-  line-height: 49px;
-  font-weight: 400;
+  line-height: 37px;
+  font-weight: bold;
   text-align: center;
   letter-spacing: 3.2px;
 }
@@ -156,8 +163,11 @@ section h2 {
 
 
 .TextItem {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #fff;
   font-size: 20px;
+  line-height: 37px;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -189,16 +199,16 @@ section h2 {
 .NumeroItem {
   color: #fff;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .TextIten {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: 70%;
-  
   color: #fff;
-
+  font-size: 20px;
   line-height: 37px;
-  font-weight: 600;
+  font-weight: bold;
   text-align: left;
 }
 
@@ -225,8 +235,10 @@ section h2 {
   border-radius: 100px;
   background-color: transparent;
   color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
-  font-weight: 600;
+  line-height: 37px;
+  font-weight: bold;
   text-align: center;
   letter-spacing: 2px;
   cursor: pointer;
@@ -254,8 +266,10 @@ section h2 {
   padding-left: 12px;
   background-color: #103941;
   color: #fff;
-  font-size: 19px;
-  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  line-height: 37px;
+  font-weight: bold;
   margin-bottom: 20px;
   border-radius: 20px;
 }
@@ -276,15 +290,18 @@ section h2 {
 }
 
 .descricao-entenda{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
   line-height: 37px;
-  font-weight: 600;
+  font-weight: bold;
+  color:#fff;
   /* border-bottom: 2px solid #02d77a; */
 }
 .descricao-entenda strong{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
   line-height: 37px;
-  font-weight: 600;
+  font-weight: bold;
 color: #02d77a;
 }
 @media (min-width: 767px) {
@@ -314,9 +331,13 @@ color: #02d77a;
   padding: 150px 0;
 }
 
-.Praquem h2 {
-  font-size: 50px;
-  margin-top: 0;
+.Praquemtitulo1{
+  color: #001e20;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  line-height: 37px;
+  font-weight: bold;
+  letter-spacing: 3.2px;
 }
 .Praquem .badges .badge-link {
   display: block;
@@ -336,8 +357,10 @@ color: #02d77a;
   padding-left: 12px;
   background-color: #103941;
   color: #fff;
-  font-size: 18px;
-  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  line-height: 37px;
+  font-weight: bold;
   margin-bottom: auto;
   border-radius: 20px;
 }
@@ -350,6 +373,56 @@ color: #02d77a;
   list-style-type: none;
   
 }
+
+.PraquemTitulo {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+  color: #001e20;
+  font-size: 40px;
+  line-height: 37px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 3.2px;
+}
+.PraquemTexto h6{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+}
+
+.Praquemdescricao{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  line-height: 37px;
+  font-weight: bold;
+  color:#001e20;
+  /* border-bottom: 2px solid #02d77a; */
+}
+.Praquemdescricao strong{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  line-height: 37px;
+  font-weight: bold;
+color: #00aa60;
+}
+
+@media (max-width: 767px) {
+  .computador {
+    display: none;
+  }
+  
+  
+}
+
+@media (min-width: 767px) {
+  .mobile {
+    display: none;
+  }
+  
+  
+}
+
+
 /* EXEMPLOS */
 
 .Exemplo{
@@ -361,25 +434,35 @@ color: #02d77a;
 .TituloExemplo h2{
   margin-bottom: 20px;
   color: #001e20;
-  line-height: 51px;
-  font-weight: bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  line-height: 37px;
+  font-weight: bold;
+  
 }
 .TituloExemplo h3{
   margin-bottom: 20px;
   color: #001e20;
-  line-height: 51px;
-  font-weight: bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  line-height: 37px;
+  font-weight: bold;
 }
 .TituloExemplo strong{
   margin-bottom: 20px;
   color: #01a67a;
-  line-height: 51px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  line-height: 37px;
   font-weight: bold;
 }
 
 .Exemplo #myCarousel a{
   color: #000; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 40px;
+  line-height: 37px;
+  font-weight: bold;
 }
 @media (max-width: 377px) {
   .Exemplo #myCarousel a{
@@ -414,6 +497,18 @@ color: #02d77a;
   background: linear-gradient(to right, #0e2b31, #174650);
   padding: 0px;
 }
+.TituloCusto h2{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 40px;
+    line-height: 37px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3.2px;
+  
+}
 
 .custo .card {
   border: none;
@@ -428,7 +523,10 @@ color: #02d77a;
 
 .custo .TituloCartao {
   margin: 0.5rem 0;
-  font-size: 0.9rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  line-height: 37px;
+  font-weight: bold;
   letter-spacing: .1rem;
   font-weight: bold;
 }
@@ -444,6 +542,10 @@ color: #02d77a;
 
 .custo ul li {
   margin-bottom: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  line-height: 37px;
+  font-weight: bold;
 }
 
 .custo .text-muted {
@@ -492,7 +594,10 @@ color: #02d77a;
 }
 
 .Slogan .ConteudoSlogan h6 {
-  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  line-height: 37px;
+  font-weight: bold;
   max-width: 750px;
   margin-top: 0;
   margin-bottom: 25px;
@@ -567,8 +672,11 @@ color: #02d77a;
   display: block;
   margin-bottom: 75px;
   color: #001e20;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 40px;
-  font-weight: 400;
+  line-height: 37px;
+  font-weight: bold;
+  
   text-align: center;
 }
 
@@ -604,8 +712,10 @@ color: #02d77a;
 .cabecalhoPergunta {
   margin-bottom: 20px;
   color: #4c5157;
-  font-size: 17px;
-  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  line-height: 37px;
+  font-weight: bold;
 }
 
 
@@ -619,8 +729,10 @@ color: #02d77a;
   border: 1px solid #fafafa;
   background-color: transparent;
   color: #fff;
-  font-size: 15px;
-  font-weight: 300;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  line-height: 37px;
+  font-weight: bold;
 }
 
 .ParagrafoResposta {
@@ -628,20 +740,24 @@ color: #02d77a;
   padding-top: 10px;
   padding-left: 10px;
   color: #999;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 15px;
-  font-weight: 400;
+  line-height: 37px;
+  font-weight: bold;
 }
 
 .ParagrafoContato {
   width: 75%;
   color: #979fa8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 13px;
-  font-weight: 400;
+  line-height: 37px;
+  font-weight: bold;
 }
 
 .textEmail {
   color: #999;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 /* RODAPE */
@@ -687,7 +803,10 @@ footer {
 }
 
 footer p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 12px;
+  line-height: 37px;
+  font-weight: bold;
   margin: 0;
 }
 
