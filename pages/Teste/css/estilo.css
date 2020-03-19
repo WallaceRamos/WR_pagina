@@ -241,7 +241,7 @@ section h2 {
 
 /* FUNCIONALIDADES */
 .Funcionalidades {
-  padding-top: 160px;
+  
   padding-bottom: 160px;
   background-color: #0a2328;
 }
@@ -260,7 +260,11 @@ section h2 {
   border-radius: 20px;
 }
 
-
+.textoFunci h6{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+}
 
 .Lista {
   display: flex;
@@ -270,7 +274,20 @@ section h2 {
   list-style-type: none;
   
 }
-
+@media (min-width: 767px) {
+  .textoFunci {
+    display: none;
+  }
+  
+  
+}
+@media (max-width: 767px) {
+  .Lista {
+    display: none;
+  }
+  
+  
+}
 
 
 
