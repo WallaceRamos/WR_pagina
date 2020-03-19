@@ -274,6 +274,19 @@ section h2 {
   list-style-type: none;
   
 }
+
+.descricao-entenda{
+  font-size: 20px;
+  line-height: 37px;
+  font-weight: 600;
+  /* border-bottom: 2px solid #02d77a; */
+}
+.descricao-entenda strong{
+  font-size: 20px;
+  line-height: 37px;
+  font-weight: 600;
+color: #02d77a;
+}
 @media (min-width: 767px) {
   .textoFunci {
     display: none;
