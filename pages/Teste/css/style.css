@@ -21,6 +21,7 @@ body {
 }
 
 body {
+  background:  linear-gradient(to left, #fffbfb, #d4d4d4);
   font-size: 1.6rem;
 }
 
@@ -509,7 +510,7 @@ MODAL
 
 
 /*=============== 
-FORM
+Rodape
 ==================*/
 .rodape {
   width:100%;
@@ -541,6 +542,4 @@ FORM
   color: #fff;
   padding: 10px;
 }
-
-
 
